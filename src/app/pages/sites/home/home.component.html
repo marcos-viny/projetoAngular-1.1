@@ -1,0 +1,49 @@
+<div class="bg-indigo-800 w-full h-full">
+    <div class="p-5">
+        <div class="flex justify-center flex-wrap">
+
+            <div class="w-3/4 p-6">
+                <div class="">
+                    <div [ngClass]="{'ativado' : opened}" class="bg-red-500 w-32 h-16 absolute items-center flex justify-center
+                    rounded opacity-0 duration-300 ease-in">
+                        Hell Blade
+                    </div>
+                </div>
+                <img (mouseenter)="Hover()" (mouseleave)="exitHover()" class="ml-16 object-cover shadow" src="../../../../assets/imgs/hellblade-2-img-2.png" alt="">
+            </div>
+
+
+            <div class="w-3/4 p-6">
+                <div class="flex justify-end">
+                    <div [ngClass]="{'ativado' : opened1}" class="bg-red-500 w-32 h-16 absolute flex justify-center items-center
+                     rounded opacity-0 duration-300 ease-in">
+                        A Plague Tale
+                    </div>
+                    <img class=" ml-16 object-cover mr-16 shadow" src="../../../../assets/imgs/aplague-img-1.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="w-3/4 p-6">
+                <div class="">
+                    <div [ngClass]="{'ativado' : opened}" class="bg-red-500 w-32 h-16 absolute flex justify-center items-center
+                    rounded opacity-0 duration-300 ease-in">
+                        Red Dead
+                    </div>
+                </div>
+                <img class=" ml-16 object-cover shadow" src="../../../../assets/imgs/redded-img-1.png" alt="">
+            </div>
+
+
+            <div class="w-3/4 p-6">
+                <div class="flex justify-end">
+                    <div [ngClass]="{'ativado' : opened}" class="bg-red-500 w-32 h-16 absolute flex justify-center items-center
+                    rounded opacity-0 duration-300 ease-in">
+                        Resident Evil
+                    </div>
+                    <img class=" ml-16 object-cover mr-16 shadow" src="../../../../assets/imgs/resident-img-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
