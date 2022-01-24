@@ -7,22 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  opened : boolean = false;
-  opened1 : boolean = false
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  Hover(){
-    this.opened = true;
-   
-  }
-
-  exitHover(){
-    this.opened = false;
-  }
 
 }

@@ -1,0 +1,41 @@
+[data-anima] {
+    @screen md {
+        opacity: 0;
+        transition: .8s;
+    }
+}
+
+[data-anima="top"] {
+    @screen md {
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+[data-anima="right"] {
+    @screen md {
+        transform: translate3d(50px, 0, 0);
+    }
+}
+
+[data-anima="left"] {
+    @screen md {
+        transform: translate3d(-50px, 0, 0);
+    }
+}
+
+[data-anima="bottom"] {
+    @screen md {
+        transform: translate3d(0, -50px, 0);
+    }
+}
+
+[data-anima].animate {
+    @screen md {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.ativado {
+    display: block;
+}
